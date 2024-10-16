@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable-Resume-Builder </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeForm">
+        <h2>Personal Information</h2>
+        <label for="username">UserName:</label>
+        <input type="text" id="username" name="username"></form><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"></form><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"></form><br><br>
+
+        <label for="Whatsapp">Whatsapp:</label>
+        <input type="Whataspp" id="Whataspp" name="Whatsapp"></form><br><br>
+
+        <h2>Education</h2>
+        <label for="education">Education:</label>
+        <input type="text" id="education" name="education"></form><br><br>
+
+
+        <h2>Work Experience</h2>
+        <label for="experience">Experience:</label>
+        <input type="text" id="experience" name="experience"></form><br><br>
+
+        <h2> Skills </h2>
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills"></form><br><br>
+
+        <h2>Description</h2>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description"></form><br><br>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+     <!-- generate resume section-->
+    <div id="resumeOutput"></div><br>
+    <!--generate sharable link section-->
+    <div id="sharable-link-container"  style="display:none;">
+        <h2>Sharable Link</h2>
+        <a href="#" id="sharable-link" target="_blank"></a><br>
+        <button id="download-pdf">Download as PDF</button>
+    </div>
+    <script src="index.js"></script><!-- link to compile file from ts-->
+    
+</body>
+</html>
